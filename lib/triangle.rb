@@ -8,7 +8,7 @@ class Triangle
     @length3 = length3
 end
 
-  def kind(equilateral:, isosceles:, scalene:)
+  def kind
     if (@length1 <= 0 or @length2 <= 0 or @length3 <= 0) or
       (@length2 + @length1 < @length3 or @length2 + @length3 < @lengnth1 or
       @length1 + @length3 <= @length2)
