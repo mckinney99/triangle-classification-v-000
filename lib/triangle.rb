@@ -13,9 +13,12 @@ end
       (@length2 + @length1 < @length3 or @length2 + @length3 < @lengnth1 or
       @length1 + @length3 <= @length2)
       raise TriangleError
-    elsif @length1 == @length2 and @length1 == @length3 :equilateral
-    elsif @length1 == @length2 or @length1 == @length3 or @length2 == @length3 :isosceles
-    elsif @length1 != @length2 or @length2 != @length3 :scalene
+    elsif @length1 == @length2 and @length1 == @length3
+      return :equilateral
+    elsif @length1 == @length2 or @length1 == @length3 or @length2 == @length3
+      return :isosceles
+    elsif @length1 != @length2 or @length2 != @length3
+      return :scalene
     end
   end
 
